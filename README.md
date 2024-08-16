@@ -41,4 +41,4 @@ The following CNN model with 4 layes was used:
 - The macro and weighted averages for precision, recall, and F1-score are all close to 0.92-0.94, confirming the model's effectiveness across the different classes.
 
 ## Evaluation
-Model achieved around 95% accuracy on the test dataset after 19 epochs, with precision and recall all greater than 80%. However, with the training data, it only achieved 80% accuracy rate. This is because validation and test images were hand-picked to be the best image. This suggest that the model may peform worse to predict on an unseen image. 
+Model achieved around 92% accuracy on the test dataset after 22 epochs, with precision and recall all greater than 80%. However, with the training data, it only achieved 77% accuracy rate. This is because validation and test images were hand-picked to be the best image. This suggest that the model may peform worse to predict on an unseen image. 
