@@ -7,8 +7,7 @@ All images are 224×224×3 color images after cropping, with cropping ensuring t
 The 15 bird species are selected based on the following criteria:
 1. Minimizing interspecies variation
 	- Individuals differ - Jacobin Pigeon
-	- Sexual dimorphism ( Male and female have different color and pattern ) - Ostrich
-		This is specially noted on the data source page that 80% of the images are of the males and 20% of the females.
+	- Sexual dimorphism ( Male and female have different color and pattern ) - Ostrich (This is specially noted on the data source page that 80% of the images are of the males and 20% of the females.)
 	- Juvenile and adult are different - Canada Goose (Although not included in the dataset)
 2. Maximizing intraspecies variation
 	It was noted that birds can have different postures in the images. In most images, the head is well-shown. Therefore, bill variation among different species was maximized when selecting the 15 species. - American Avocet
@@ -37,9 +36,9 @@ The following CNN model with 4 layes was used:
     - activation='relu'
 
 ## Model Summary
--The classification model performed very well, achieving an overall accuracy of 92% across 15 bird species.
--The lowest accuracy of 0.67 in Trumpter Swan, and 0.71 in Crow. Except them, all precision and recall of other species exceed 0.80.
--The macro and weighted averages for precision, recall, and F1-score are all close to 0.92-0.94, confirming the model's effectiveness across the different classes.
+- The classification model performed very well, achieving an overall accuracy of 92% across 15 bird species.
+- The lowest accuracy of 0.67 in Trumpter Swan, and 0.71 in Crow. Except them, all precision and recall of other species exceed 0.80.
+- The macro and weighted averages for precision, recall, and F1-score are all close to 0.92-0.94, confirming the model's effectiveness across the different classes.
 
 ## Evaluation
 Model achieved around 95% accuracy on the test dataset after 19 epochs, with precision and recall all greater than 80%. However, with the training data, it only achieved 80% accuracy rate. This is because validation and test images were hand-picked to be the best image. This suggest that the model may peform worse to predict on an unseen image. 
